@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="heading">
+      <img src="./assets/logo.png" class="logo">
+      <HelloWorld msg="Quote Generator with Progressive Web Apps and Vue.js"/>
+    </div>
+    <div id="generator">
+      <quote-gen></quote-gen>
+    </div>
+    <div id="container"></div>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import QuoteGen from "./components/QuoteGen.vue";
+
+let bar;
 
 export default {
-  name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    QuoteGen
   }
 };
 </script>
@@ -22,7 +31,48 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+}
+
+.logo {
+  margin-top: 35vh;
+  margin-bottom: -1.5rem;
+  width: 60vw;
+}
+
+.heading {
+  background: #a1ffce; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #faffd1,
+    #a1ffce
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+#generator {
+  height: 100vh;
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffc3a0,
+    #ffafbd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffc3a0,
+    #ffafbd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
 }
 </style>
