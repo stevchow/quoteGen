@@ -5,7 +5,8 @@
         <div class="quote__capacity"><span class="quote__progress" :style="{width:`${quoteArr.length * 10}%`}"></span></div>
         <h3>{{quoteArr.length}}/10</h3>
         <div class="quote__input">
-          <textarea name="" id="quoteTyped" cols="30" rows="10" placeholder="  input the quote you want to generate" @keyup.enter="pushQuote"></textarea>
+          <textarea aria-label="quoteInput" name="quoteInput" id="quoteTyped" cols="30" rows="10" placeholder="  input the quote you want to generate" @keyup.enter="pushQuote">
+          </textarea>
         <div class="quote__input--btn">
           <button @click="pushQuote">generate</button>
         </div>

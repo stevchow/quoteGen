@@ -2,7 +2,7 @@
   <div class="hello">
     <h3>{{ msg }}</h3>
     <section id="section07" class="demo">
-      <a href="#generator"><span></span><span></span><span></span></a>
+      <a href="#generator" title="Navigating to generator" aria-label="Navigating to generator"><span></span><span></span><span></span></a>
     </section>
   </div>
 </template>

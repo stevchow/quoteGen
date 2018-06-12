@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="heading">
-      <img src="./assets/logo.png" class="logo">
+      <img src="./assets/logo.png" class="logo" alt="logo">
       <HelloWorld msg="Quote Generator with Progressive Web Apps and Vue.js"/>
     </div>
     <div id="generator">
