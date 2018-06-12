@@ -7,7 +7,6 @@
     <div id="generator">
       <quote-gen></quote-gen>
     </div>
-    <div id="container"></div>
   </div>
 </template>
 
@@ -56,7 +55,7 @@ export default {
 }
 
 #generator {
-  height: 100vh;
+  height: 100%;
   background: #ffafbd; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -68,11 +67,5 @@ export default {
     #ffc3a0,
     #ffafbd
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#container {
-  margin: 20px;
-  width: 400px;
-  height: 8px;
 }
 </style>

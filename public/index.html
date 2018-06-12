@@ -21,6 +21,7 @@
 <style>
   html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -32,6 +33,13 @@
   body {
     padding: 0;
     margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* disable selection in PWA */
+    user-select: none;
+    /* disabled pull down refresh */
+    overscroll-behavior: contain;
   }
 </style>
 
