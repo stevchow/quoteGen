@@ -16,6 +16,6 @@ This is simple Quote bin is for you to store 10 quotes. Sorry if this is too sim
 
 ---
 
-### PWA Score : 95
+### PWA Score : 91
 
 ![audit](audit.png)
