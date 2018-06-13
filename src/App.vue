@@ -4,17 +4,13 @@
       <img src="./assets/logo.png" class="logo" alt="logo">
       <HelloWorld msg="Quote Generator with Progressive Web Apps and Vue.js"/>
     </div>
-    <div id="generator">
-      <quote-gen></quote-gen>
-    </div>
+    <quote-gen></quote-gen>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import QuoteGen from "./components/QuoteGen.vue";
-
-let bar;
 
 export default {
   components: {
@@ -52,20 +48,5 @@ export default {
     #a1ffce
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
-}
-
-#generator {
-  height: 100%;
-  background: #ffafbd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #ffc3a0,
-    #ffafbd
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #ffc3a0,
-    #ffafbd
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 </style>
