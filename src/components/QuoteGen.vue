@@ -24,7 +24,6 @@
 
 #quoteGen {
   text-align: center;
-  color: #ffffff;
   height: 100%;
   background: #ffafbd; /* fallback for old browsers */
   background: -webkit-linear-gradient(
